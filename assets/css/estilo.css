@@ -1,0 +1,123 @@
+body {
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#contenedor {
+  width: 80%;
+  max-width: 600px;
+  min-width: 500px;
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-areas:
+    "input input"
+    "resumen lista";
+    grid-template-columns: 1fr 2fr;
+    border: solid 1px #ccc;
+}
+
+#areaInput {
+  grid-area: input;
+  width: 100%;
+}
+
+#resumen {
+  grid-area: resumen;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 0.8em;
+}
+
+#resumen li {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: -20px;
+}
+
+#listado {
+  grid-area: lista;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 0.8em;
+  margin-left: -30px;
+  font-size: 0.9em;
+}
+
+.itemTarea {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 70% 20% 15%;
+  padding: 10px;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 2px;
+/*   display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  
+}
+
+#total, #realizadas {
+    font-weight: 700;
+}
+
+
+#nuevaTarea {
+  border-color: #cccccc;
+  border-style: solid;
+  padding: 12px;
+  font-size: 15px;
+  border-width: 2px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 0px 0px rgba(42, 42, 42, 0.75);
+  width: 70%;
+}
+#nuevaTarea:focus {
+  outline: none;
+}
+
+#agregarTarea {
+    background: #75D38C;
+    background-image: -webkit-linear-gradient(top, #75D38C, #357041);
+    background-image: -moz-linear-gradient(top, #75D38C, #357041);
+    background-image: -ms-linear-gradient(top, #75D38C, #357041);
+    background-image: -o-linear-gradient(top, #75D38C, #357041);
+    background-image: -webkit-gradient(to bottom, #75D38C, #357041);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    border: solid #107C35 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ #agregarTarea:hover {
+    border: solid #99C624 1px;
+    background: #357041;
+    background-image: -webkit-linear-gradient(top, #357041, #75D38C);
+    background-image: -moz-linear-gradient(top, #357041, #75D38C);
+    background-image: -ms-linear-gradient(top, #357041, #75D38C);
+    background-image: -o-linear-gradient(top, #357041, #75D38C);
+    background-image: -webkit-gradient(to bottom, #357041, #75D38C);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+ }
+
+ .cabecTabla {
+  padding: 5px; 
+  border-bottom: solid 1px #ccc;
+  text-align: left;
+ }
+
+ .contLista {
+  margin-top: 20px;
+ }
