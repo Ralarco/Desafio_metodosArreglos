@@ -63,8 +63,8 @@ function renderTask() {
       html += `
             <tr>
                 <td style="color:#CCC">${tarea.nombre}</td>
-                <td style="text-align:center"></td>
-                <td style="text-align:center"><button onclick="deleteTask(${tarea.id})">X</button></td>
+                <td style="text-align:center; color: #1FCD5F"><i class="far fa-check-square fa-lg"></i></td>
+                <td style="text-align:center"><button onclick="deleteTask(${tarea.id})"><i class="far fa-trash-alt"></i></button></td>
             </tr>
             `;
     } else if (tarea.completado == false) {
@@ -72,7 +72,7 @@ function renderTask() {
             <tr>
                 <td>${tarea.nombre}</td>
                 <td style="text-align:center"><input type="checkbox" id="cb${tarea.id}" onchange="checkTasks(${tarea.id})"></td>
-                <td style="text-align:center"><button onclick="deleteTask(${tarea.id})">X</button></td>
+                <td style="text-align:center"><button onclick="deleteTask(${tarea.id})"><i class="far fa-trash-alt"></i></button></td>
              </tr>`;
     }
   }

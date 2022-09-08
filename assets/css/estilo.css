@@ -1,6 +1,7 @@
 body {
   align-items: center;
   font-family: "Roboto", sans-serif;
+  background-color: #636363;
 }
 
 #contenedor {
@@ -13,8 +14,10 @@ body {
   grid-template-areas:
     "input input"
     "resumen lista";
-    grid-template-columns: 1fr 2fr;
-    border: solid 1px #ccc;
+  grid-template-columns: 1fr 2fr;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  background-color: #FFFFFF;
 }
 
 #areaInput {
@@ -22,11 +25,16 @@ body {
   width: 100%;
 }
 
+#areaInput h2{
+  font-size: 1.2em;
+}
+
 #resumen {
   grid-area: resumen;
   margin-top: 20px;
   list-style: none;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  color: #636363;
 }
 
 #resumen li {
@@ -46,27 +54,26 @@ table {
   font-size: 0.9em;
 }
 
-.itemTarea {
-  display: grid;
-  width: 90%;
-  grid-template-columns: 70% 20% 15%;
-  padding: 10px;
-  border-bottom: solid 1px #ccc;
-  margin-bottom: 2px;
-/*   display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-  
+.cabecTabla {
+  font-size: 0.8em;
+  color:#636363;
 }
 
-.itemTarea button {
+#listado button {
   align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+#listado button:hover{
+  color: rgb(91, 12, 156);
 }
 
 #total, #realizadas {
     font-weight: 700;
 }
-
 
 #nuevaTarea {
   border-color: #cccccc;
@@ -74,9 +81,9 @@ table {
   padding: 12px;
   font-size: 15px;
   border-width: 2px;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 0px 0px 0px 0px rgba(42, 42, 42, 0.75);
-  width: 70%;
+  width: 75%;
 }
 #nuevaTarea:focus {
   outline: none;
@@ -89,9 +96,9 @@ table {
     background-image: -ms-linear-gradient(top, #75D38C, #357041);
     background-image: -o-linear-gradient(top, #75D38C, #357041);
     background-image: -webkit-gradient(to bottom, #75D38C, #357041);
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
@@ -112,9 +119,9 @@ table {
     background-image: -ms-linear-gradient(top, #357041, #75D38C);
     background-image: -o-linear-gradient(top, #357041, #75D38C);
     background-image: -webkit-gradient(to bottom, #357041, #75D38C);
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     text-decoration: none;
  }
 
