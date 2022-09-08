@@ -35,11 +35,13 @@ body {
     margin-left: -20px;
 }
 
+table {
+  font-size: 0.8em;
+}
+
 #listado {
   grid-area: lista;
   margin-top: 20px;
-  list-style: none;
-  font-size: 0.8em;
   margin-left: -30px;
   font-size: 0.9em;
 }
@@ -55,6 +57,10 @@ body {
   flex-direction: row;
   justify-content: space-between; */
   
+}
+
+.itemTarea button {
+  align-items: flex-end;
 }
 
 #total, #realizadas {
